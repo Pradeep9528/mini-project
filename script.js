@@ -7,7 +7,7 @@ level = 0;
 let h2 = document.querySelector("h2");
 
 document.addEventListener("keypress", function () {
-  // start the game to press any key
+  // start the game to press any key.
   if (started == false) {
     console.log("game is the started");
     started = true;
@@ -16,12 +16,13 @@ document.addEventListener("keypress", function () {
 });
 
 function gameFlash(btn) {
-  //  game flahs started
+  //  game flash started
   btn.classList.add("flash");
   setTimeout(function () {
     btn.classList.remove("flash");
   }, 400);
 }
+//when user click the btn then after
 function userFlash(btn) {
   btn.classList.add("userflash");
   setTimeout(function () {
